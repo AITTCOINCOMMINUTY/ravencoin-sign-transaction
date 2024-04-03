@@ -19,13 +19,10 @@ var $80bd448eb6ea085b$require$Buffer = $g5Y9E$buffer.Buffer;
 
 function $80bd448eb6ea085b$export$c5552dfdbc7cec71(network, rawTransactionHex, UTXOs, privateKeys) {
     const networkMapper = {
-        rvn: (0, $g5Y9E$hyperbitjschains.chains).rvn.main,
-        "rvn-test": (0, $g5Y9E$hyperbitjschains.chains).rvn.test,
-        evr: (0, $g5Y9E$hyperbitjschains.chains).evr.main,
-        "evr-test": (0, $g5Y9E$hyperbitjschains.chains).evr.test
+        aitt: (0, $g5Y9E$hyperbitjschains.chains).aitt.main,
     };
     const coin = networkMapper[network];
-    if (!coin) throw new Error("Validation error, first argument network must be rvn, rvn-test, evr or evr-test");
+    if (!coin) throw new Error("Validation error, first argument network must be aitt!");
     //@ts-ignore
     const RAVENCOIN = (0, $g5Y9E$hyperbitjschains.toBitcoinJS)(coin);
     const tx = $g5Y9E$bitcoinjslib.Transaction.fromHex(rawTransactionHex);

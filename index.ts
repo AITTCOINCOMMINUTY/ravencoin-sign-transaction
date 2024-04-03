@@ -13,16 +13,14 @@ interface IUTXO {
 }
 
 export function sign(
-  network: "rvn" | "rvn-test" | "evr" | "evr-test",
+  network: "aitt",
   rawTransactionHex: string,
   UTXOs: Array<IUTXO>,
   privateKeys: any
 ): string {
   const networkMapper = {
     rvn: chains.rvn.main,
-    "rvn-test": chains.rvn.test,
-    evr: chains.evr.main,
-    "evr-test": chains.evr.test,
+
   };
 
   const coin = networkMapper[network];
