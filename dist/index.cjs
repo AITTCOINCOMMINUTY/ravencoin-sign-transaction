@@ -2,9 +2,11 @@ var $g5Y9E$buffer = require("buffer");
 var $g5Y9E$bitcoinjslib = require("bitcoinjs-lib");
 var $g5Y9E$hyperbitjschains = require("@hyperbitjs/chains");
 
+
 function $parcel$defineInteropFlag(a) {
   Object.defineProperty(a, '__esModule', {value: true, configurable: true});
 }
+
 function $parcel$export(e, n, v, s) {
   Object.defineProperty(e, n, {get: v, set: s, enumerable: true, configurable: true});
 }
@@ -19,10 +21,10 @@ var $80bd448eb6ea085b$require$Buffer = $g5Y9E$buffer.Buffer;
 
 function $80bd448eb6ea085b$export$c5552dfdbc7cec71(network, rawTransactionHex, UTXOs, privateKeys) {
     const networkMapper = {
-        aitt: (0, $g5Y9E$hyperbitjschains.chains).aitt.main,
+        rvn: (0, $g5Y9E$hyperbitjschains.chains).aitt.main
     };
     const coin = networkMapper[network];
-    if (!coin) throw new Error("Validation error, first argument network must be aitt!");
+    if (!coin) throw new Error("Validation error, first argument network must be aitt");
     //@ts-ignore
     const RAVENCOIN = (0, $g5Y9E$hyperbitjschains.toBitcoinJS)(coin);
     const tx = $g5Y9E$bitcoinjslib.Transaction.fromHex(rawTransactionHex);

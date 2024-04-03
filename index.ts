@@ -19,15 +19,15 @@ export function sign(
   privateKeys: any
 ): string {
   const networkMapper = {
-    rvn: chains.rvn.main,
-
+    rvn: chains.aitt.main,
+    
   };
 
   const coin = networkMapper[network];
 
   if (!coin) {
     throw new Error(
-      "Validation error, first argument network must be rvn, rvn-test, evr or evr-test"
+      "Validation error, first argument network must be aitt"
     );
   }
 
