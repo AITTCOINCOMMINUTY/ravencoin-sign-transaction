@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/ravenrebels/ravencoin-sign-transaction#readme",
   "dependencies": {
-    "@hyperbitjs/chains": "^0.3.1",
+    "@hyperbitjs/chains": "git+https://github.com/AITTCOINCOMMINUTY/chains",
     "bitcoinjs-lib": "^5.2.0"
   },
   "devDependencies": {
