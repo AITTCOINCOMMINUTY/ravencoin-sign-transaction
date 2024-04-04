@@ -21,7 +21,7 @@ var $80bd448eb6ea085b$require$Buffer = $g5Y9E$buffer.Buffer;
 
 function $80bd448eb6ea085b$export$c5552dfdbc7cec71(network, rawTransactionHex, UTXOs, privateKeys) {
     const networkMapper = {
-        rvn: (0, $g5Y9E$hyperbitjschains.chains).aitt.main
+        aitt: (0, $g5Y9E$hyperbitjschains.chains).aitt.main
     };
     const coin = networkMapper[network];
     if (!coin) throw new Error("Validation error, first argument network must be aitt");

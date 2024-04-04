@@ -8,7 +8,7 @@ var $c3f6c693698dc7cd$require$Buffer = $hCgyA$Buffer;
 
 function $c3f6c693698dc7cd$export$c5552dfdbc7cec71(network, rawTransactionHex, UTXOs, privateKeys) {
     const networkMapper = {
-        rvn: (0, $hCgyA$chains).aitt.main
+        aitt: (0, $hCgyA$chains).aitt.main
     };
     const coin = networkMapper[network];
     if (!coin) throw new Error("Validation error, first argument network must be aitt");

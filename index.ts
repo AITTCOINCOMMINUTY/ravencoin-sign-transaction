@@ -19,7 +19,7 @@ export function sign(
   privateKeys: any
 ): string {
   const networkMapper = {
-    rvn: chains.aitt.main,
+    aitt: chains.aitt.main,
     
   };
 
